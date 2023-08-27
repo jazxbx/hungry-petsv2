@@ -1,12 +1,21 @@
-import { useEffect, useState } from "react";
+import { cloneElement, useEffect, useState } from "react";
 import { Card } from "./components/Card";
-import { FeedPetBtn, HandleLoveIncrease } from "./components/petUtils";
+import { FeedPetBtn, HandleLoveIncrease } from "./components/PetUtils";
 
 const App = () => {
   // initial state
   const [pets, setPets] = useState([
     {
       id: 1,
+      emoji: "🦉",
+      name: "Owliver",
+      hunger: 99,
+      love: 95,
+      isAlive: true,
+      epitaph: "In the silence of the night, your wisdom echoes.",
+    },
+    {
+      id: 2,
       emoji: "🦉",
       name: "Owliver",
       hunger: 66,
@@ -20,22 +29,27 @@ const App = () => {
     const interval = setInterval(() => {
       console.log("interval running");
       setPets((prevPets) => {
-        // make a copy of state
-        const updatedPets = prevPets.map((pet) => ({
-          ...pet,
-          // update hunger and love
-          hunger: pet.hunger + 0.5,
-          love: pet.love - 0.5,
-        }));
-        // sanity checck
-        // console.log(
-        //   "Updated hunger values:",
-        //   updatedPets.map((pet) => pet.hunger)
-        // );
+        const updatedPets = prevPets.map((pet) => {
+          let updatedHunger = pet.hunger + 0.5;
+          let updatedLove = pet.love - 0.5;
+
+          if (updatedHunger === 100 || updatedLove <= 0) {
+            updatedHunger = 0;
+            updatedLove = 0;
+            pet.isAlive = false;
+          }
+          console.log(updatedHunger);
+          console.log(pet.isAlive);
+          return {
+            ...pet,
+            hunger: updatedHunger,
+            love: updatedLove,
+          };
+        });
         return updatedPets;
       });
     }, 1000);
-    // clear interval
+
     return () => clearInterval(interval);
   }, []);
 
@@ -55,6 +69,7 @@ const App = () => {
                 FeedPetBtn(pet.id, setPets);
               }}
               lovePet={() => HandleLoveIncrease(pet.id, setPets)}
+              isAlive={pet.isAlive}
             />
           );
         })}
