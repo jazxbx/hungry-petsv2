@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Card } from "./components/Card";
-import { FeedPetBtn } from "./components/petUtils";
+import { FeedPetBtn, HandleLoveIncrease } from "./components/petUtils";
 
 const App = () => {
   // initial state
@@ -54,6 +54,7 @@ const App = () => {
               feedPet={() => {
                 FeedPetBtn(pet.id, setPets);
               }}
+              lovePet={() => HandleLoveIncrease(pet.id, setPets)}
             />
           );
         })}

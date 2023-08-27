@@ -1,6 +1,8 @@
-const Card = ({ name, emoji, hunger, love, feedPet }) => (
+const Card = ({ name, emoji, hunger, love, feedPet, lovePet }) => (
   <div className="card">
-    <div className="emoji">{emoji}</div>
+    <div className="emoji" onClick={lovePet}>
+      {emoji}
+    </div>
     <p>{name}</p>
     <p>Hunger:</p>
     <meter max="100" min="0" value={hunger}></meter>
