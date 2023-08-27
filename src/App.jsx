@@ -1,4 +1,4 @@
-import { cloneElement, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Card } from "./components/Card";
 import { FeedPetBtn, HandleLoveIncrease } from "./components/PetUtils";
 
@@ -9,7 +9,7 @@ const App = () => {
       id: 1,
       emoji: "🦉",
       name: "Owliver",
-      hunger: 99,
+      hunger: 1,
       love: 95,
       isAlive: true,
       epitaph: "In the silence of the night, your wisdom echoes.",
