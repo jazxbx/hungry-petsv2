@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Card } from "./components/Card";
+import { FeedPetBtn } from "./components/petUtils";
 
 const App = () => {
   // initial state
@@ -26,10 +27,11 @@ const App = () => {
           hunger: pet.hunger + 0.5,
           love: pet.love - 0.5,
         }));
-        console.log(
-          "Updated hunger values:",
-          updatedPets.map((pet) => pet.hunger)
-        );
+        // sanity checck
+        // console.log(
+        //   "Updated hunger values:",
+        //   updatedPets.map((pet) => pet.hunger)
+        // );
         return updatedPets;
       });
     }, 1000);
@@ -44,11 +46,14 @@ const App = () => {
         {pets.map((pet) => {
           return (
             <Card
+              key={pet.id}
               hunger={pet.hunger}
               love={pet.love}
               name={pet.name}
               emoji={pet.emoji}
-              key={pet.id}
+              feedPet={() => {
+                FeedPetBtn(pet.id, setPets);
+              }}
             />
           );
         })}
