@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Card  */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 13px;
+  margin: 10px;
+  gap: 6px;
+  border: 1px solid black;
+}
+
+.emoji {
+  font-size: 50px;
+}
