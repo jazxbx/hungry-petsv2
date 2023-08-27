@@ -1,6 +1,6 @@
 const Card = ({ name, emoji, hunger, love, feedPet, lovePet, isAlive }) => {
   return (
-    <div className="card">
+    <div className={`card ${isAlive ? "isalive" : "isdead"}`}>
       {isAlive ? (
         <>
           <div className="emoji" onClick={lovePet}>
