@@ -1,3 +1,5 @@
+import { UpdatePetStatus } from "./PetStatus";
+
 // Feed pet handler fn
 
 const FeedPetBtn = (petId, setPets) => {
