@@ -133,8 +133,12 @@ const App = () => {
   }, []);
 
   return (
-    <>
-      <h1>Hungry Pets</h1>
+    <div className="pets-container">
+      <h1 className="casual">Hungry Pets</h1>
+      <p className="intro casual">
+        Keep your pets well-fed and loved to ensure their happiness and
+        survival!
+      </p>
       <div className="card-container">
         {pets.map((pet) => {
           return (
@@ -154,7 +158,7 @@ const App = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

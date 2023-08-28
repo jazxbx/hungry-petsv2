@@ -18,7 +18,12 @@ const Card = ({
           <p className="name">{name}</p>
           <div className="meter-container">
             <p className="description">Hunger:</p>
-            <meter max="100" min="0" value={hunger}></meter>
+            <meter
+              max="100"
+              min="0"
+              value={hunger}
+              className="hunger-meter"
+            ></meter>
           </div>
           <div className="meter-container">
             <p className="description">Love:</p>

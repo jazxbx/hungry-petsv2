@@ -1,4 +1,6 @@
 @font-face {
-  font-family: "casual";
-  src: url(./fonts/casual.ttf);
+  font-family: casual;
+  src: url(./fonts/casual.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }

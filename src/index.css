@@ -1,6 +1,5 @@
 :root {
   /* colors */
-  --background: #3a0ca3;
   --card-active: #f8edeb;
   --card-dead: #cae9ff;
   --button: #ff9f1c;
@@ -16,14 +15,28 @@
   padding: 0;
 }
 
+.pets-container {
+  display: grid;
+  margin: 20px 30px;
+  justify-items: center;
+}
+
 .card-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 h1 {
+  font-family: casual;
   text-align: center;
+  font-size: 3em;
+}
+
+.intro {
+  font-size: 1.3em;
+  margin: 10px auto;
 }
 
 /* Card  */
@@ -60,6 +73,10 @@ h1 {
 .meter-container {
   text-align: center;
   margin-top: 5px;
+}
+
+.hunger-meter::-webkit-meter-optimum-value {
+  background-color: red;
 }
 
 button {
