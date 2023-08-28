@@ -17,7 +17,7 @@ const App = () => {
     {
       id: 2,
       emoji: "🪨",
-      name: "Rockwell",
+      name: "Romeo",
       hunger: 50,
       love: 80,
       isAlive: true,
