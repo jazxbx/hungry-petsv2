@@ -9,7 +9,7 @@ const App = () => {
       id: 1,
       emoji: "🦉",
       name: "Owliver",
-      hunger: 1,
+      hunger: 33,
       love: 95,
       isAlive: true,
       epitaph: "In the silence of the night, your wisdom echoes.",
@@ -25,22 +25,21 @@ const App = () => {
     },
     {
       id: 3,
-      emoji: "🦔",
-      name: "Prickle",
-      hunger: 90,
-      love: 85,
-      isAlive: true,
-      epitaph: "Among the leaves, your gentle spirit rustles.",
-    },
-
-    {
-      id: 4,
       emoji: "🤖",
       name: "Baymax",
       hunger: 0,
       love: 100,
       isAlive: true,
       epitaph: "In the realm of circuits, your digital heart pulses.",
+    },
+    {
+      id: 4,
+      emoji: "🦔",
+      name: "Prickle",
+      hunger: 74,
+      love: 85,
+      isAlive: true,
+      epitaph: "Among the leaves, your gentle spirit rustles.",
     },
 
     {
@@ -66,7 +65,7 @@ const App = () => {
     {
       id: 7,
       emoji: "🦄",
-      name: "Skittles",
+      name: "Dementor",
       hunger: 20,
       love: 80,
       isAlive: true,
@@ -86,7 +85,7 @@ const App = () => {
     {
       id: 9,
       emoji: "🐧",
-      name: "Mumble",
+      name: "Agent Bob",
       hunger: 15,
       love: 85,
       isAlive: true,
