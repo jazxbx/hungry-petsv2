@@ -3,6 +3,7 @@
   --card-active: #f8edeb;
   --card-dead: #cae9ff;
   --button: #ff9f1c;
+  --header: #f06908;
   /* fontsize */
   --fs-small: 1em;
   --fs-med: 1.5em;
@@ -32,10 +33,16 @@ h1 {
   font-family: casual;
   text-align: center;
   font-size: 3em;
+  color: var(--header);
+  letter-spacing: 2px;
 }
 
 .intro {
-  font-size: 1.3em;
+  font-family: casual;
+  letter-spacing: 2px;
+  color: var(--button);
+  font-size: 1em;
+  text-align: center;
   margin: 10px auto;
 }
 
