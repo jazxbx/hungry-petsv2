@@ -16,12 +16,91 @@ const App = () => {
     },
     {
       id: 2,
-      emoji: "🦉",
-      name: "Owliver",
-      hunger: 66,
-      love: 95,
+      emoji: "🪨",
+      name: "Rockwell",
+      hunger: 50,
+      love: 80,
       isAlive: true,
-      epitaph: "In the silence of the night, your wisdom echoes.",
+      epitaph: "Solid as stone, your memory stands unshaken.",
+    },
+    {
+      id: 3,
+      emoji: "🦔",
+      name: "Prickle",
+      hunger: 90,
+      love: 85,
+      isAlive: true,
+      epitaph: "Among the leaves, your gentle spirit rustles.",
+    },
+
+    {
+      id: 4,
+      emoji: "🤖",
+      name: "Baymax",
+      hunger: 0,
+      love: 100,
+      isAlive: true,
+      epitaph: "In the realm of circuits, your digital heart pulses.",
+    },
+
+    {
+      id: 5,
+      emoji: "👻",
+      name: "Chocoboo",
+      hunger: 0,
+      love: 100,
+      isAlive: true,
+      epitaph: "Vanished from sight, your presence haunts our thoughts.",
+    },
+
+    {
+      id: 6,
+      emoji: "🦋",
+      name: "Seraphina",
+      hunger: 16,
+      love: 90,
+      isAlive: true,
+      epitaph: "Your grace dances on the winds of eternity.",
+    },
+
+    {
+      id: 7,
+      emoji: "🦄",
+      name: "Skittles",
+      hunger: 20,
+      love: 80,
+      isAlive: true,
+      epitaph: "In the warmth of the sun, your scales shimmer.",
+    },
+
+    {
+      id: 8,
+      emoji: "🦐",
+      name: "Crackers",
+      hunger: 25,
+      love: 75,
+      isAlive: true,
+      epitaph: "Beneath the waves, your tiny presence leaves ripples.",
+    },
+
+    {
+      id: 9,
+      emoji: "🐧",
+      name: "Mumble",
+      hunger: 15,
+      love: 85,
+      isAlive: true,
+      epitaph: "In the icy expanse, your waddle warms our hearts.",
+    },
+
+    {
+      id: 10,
+      emoji: "😺",
+      name: "Whiskers",
+      hunger: 10,
+      love: 90,
+      isAlive: true,
+      epitaph: "Purring softly, your memory cuddles close.",
     },
   ]);
 
