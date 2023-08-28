@@ -1,8 +1,9 @@
 :root {
   /* colors */
   --background: #3a0ca3;
-  --card-active: #f0efeb;
-  --card-dead: #e63946;
+  --card-active: #f8edeb;
+  --card-dead: #cddafd;
+  --button: #ff9f1c;
   /* fontsize */
   --fs-small: 1em;
   --fs-med: 1.5em;
@@ -19,7 +20,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  background-color: var(--background);
 }
 
 h1 {
@@ -34,22 +34,54 @@ h1 {
   align-items: center;
   border-radius: 10px;
   width: 200px;
-  height: 250px;
+  height: 280px;
   padding: 10px 13px;
   margin: 10px;
   gap: 6px;
-  border: 1px solid black;
+  border-bottom: 5px solid black;
 }
 
 .emoji {
+  margin-top: 5px;
   font-size: 50px;
   cursor: pointer;
 }
+
+.name {
+  font-size: var(--fs-med);
+  font-weight: 600;
+}
+
+.description {
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+
+.meter-container {
+  text-align: center;
+  margin-top: 5px;
+}
+
+button {
+  border: none;
+  background-color: var(--button);
+  padding: 4px 5px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
 /* bg when pet is alive */
 .isalive {
   background-color: var(--card-active);
 }
 /* bg when pet dies */
 .isdead {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   background-color: var(--card-dead);
+}
+
+q {
+  font-style: italic;
 }

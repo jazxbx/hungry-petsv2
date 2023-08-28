@@ -65,6 +65,7 @@ const App = () => {
               love={pet.love}
               name={pet.name}
               emoji={pet.emoji}
+              epitaph={pet.epitaph}
               feedPet={() => {
                 FeedPetBtn(pet.id, setPets);
               }}
